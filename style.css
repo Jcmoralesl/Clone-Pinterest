@@ -1,0 +1,163 @@
+* {
+    outline: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+img {
+    user-select: none;
+}
+
+/* NAV BAR */
+
+.menu {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
+.menu .logo {
+    width: 25px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.menu .logo:hover {
+    background-color: #eeeeee;
+}
+
+.menu .home-p {
+    color: white;
+    background-color: black;
+    padding: 12px 25px;
+    border-radius: 40px;
+    cursor: pointer;
+    user-select: none;
+    margin: 0px 5px;
+}
+
+.menu .today-p {
+    padding: 10px;
+    color: black
+}
+
+.menu .create-p {
+    padding: 10px;
+    color: black
+}
+
+.menu .finder {
+    margin-right: 1200px;
+}
+
+.menu .finder input {
+    display: inline-block;
+    width: 560%;
+    margin: 0px 5px;
+    padding: 12px 35px;
+    border-radius: 40px;
+    outline: none;
+    position: relative;
+    background-color: #efefef;
+    font-size: 15px;
+    background-image: url(https://www.freepnglogos.com/uploads/search-png/search-icon-transparent-images-vector-15.png);
+    background-size: 17px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-position: 10px;
+    color: gray;
+    border: 4px solid transparent;
+}
+
+.menu .finder input:hover {
+    background-color: #3333;
+}
+
+.menu .finder input:focus {
+    border: 4px solid #7bb5f0;
+    padding: 12px 35px;
+    background-image: none;
+}
+
+.menu .finder input::placeholder {
+    user-select: none;
+}
+
+.notifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.profile-pinterest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.profile-pinterest img {
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.profile-pinterest img:hover {
+    background-color: #eeee;
+}
+
+.message:hover {
+    background-color: #eeee;
+}
+
+.notifications:hover {
+    background-color: #eeee;
+}
+
+#arrow svg {
+    padding: 10px;
+    cursor: pointer;
+}
+/* Image Style */
+
+.card-image img {
+    max-width: 100%;
+    margin-bottom: 0.5em;
+    border-radius: 20px;
+}
+
+main {
+    columns: 5 200px;
+    column-gap: 0.5em;
+    padding: 10px
+}
