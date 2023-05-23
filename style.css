@@ -6,10 +6,20 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: Arial;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 img {
     user-select: none;
+}
+
+.header {
+    background: #ffff;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    padding-bottom: 1px;
 }
 
 /* NAV BAR */
@@ -18,8 +28,7 @@ img {
     max-width: 100%;
     display: flex;
     align-items: center;
-    padding: 10px;
-    font-weight: bold;
+    padding: 7px;
     list-style: none;
 }
 
@@ -29,8 +38,9 @@ a {
 }
 
 .menu .logo {
-    width: 25px;
+    width: 20px;
     padding: 10px;
+    padding-left: 20px;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -42,11 +52,11 @@ a {
 .menu .home-p {
     color: white;
     background-color: black;
-    padding: 12px 25px;
-    border-radius: 40px;
+    padding: 18px 20px;
+    border-radius: 30px;
     cursor: pointer;
     user-select: none;
-    margin: 0px 5px;
+    margin: 0px 4px;
 }
 
 .menu .today-p {
@@ -60,12 +70,12 @@ a {
 }
 
 .menu .finder {
-    margin-right: 1200px;
+    margin-right: 10px;
 }
 
 .menu .finder input {
     display: inline-block;
-    width: 560%;
+    width: 1400px;
     margin: 0px 5px;
     padding: 12px 35px;
     border-radius: 40px;
@@ -148,16 +158,84 @@ a {
     padding: 10px;
     cursor: pointer;
 }
+
 /* Image Style */
 
 .card-image img {
     max-width: 100%;
     margin-bottom: 0.5em;
     border-radius: 20px;
+    cursor: zoom-in; 
+    transition: all 0.2s ease;
 }
 
 main {
     columns: 5 200px;
     column-gap: 0.5em;
-    padding: 10px
+    padding: 100px;
+}
+
+/* Botones */
+
+.card-image {
+    position: relative;;
+}
+
+.card-image .btn-save {
+    position: absolute;
+    background: #e60023;
+    border: none;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    color: white;
+    border-radius: 50px;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+.card-image .btn-enviar {
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    background: none;
+    border: none;
+    border-radius: 70%;
+    background-color: white;
+    bottom: 38px;
+    right: 60px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.card-image .btn-more {
+    position: absolute;
+    background: none;
+    border: none;
+    border-radius: 70%;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    bottom: 38px;
+    right: 15px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.card-image:hover img {
+    transition: all 0.2s ease;
+    filter: brightness(0.70);
+}
+
+.card-image:hover .btn-save {
+    opacity: 1;;
+}
+
+.card-image:hover .btn-more {
+    opacity: 1;
+}
+
+.card-image:hover .btn-enviar {
+    opacity: 1;
 }
