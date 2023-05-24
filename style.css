@@ -38,9 +38,9 @@ a {
 }
 
 .menu .logo {
-    width: 20px;
+    width: 25px;
     padding: 10px;
-    padding-left: 20px;
+    padding-left: 15px;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -52,7 +52,7 @@ a {
 .menu .home-p {
     color: white;
     background-color: black;
-    padding: 18px 20px;
+    padding: 20px 20px;
     border-radius: 30px;
     cursor: pointer;
     user-select: none;
@@ -75,14 +75,14 @@ a {
 
 .menu .finder input {
     display: inline-block;
-    width: 1400px;
+    width: 87.5rem;
     margin: 0px 5px;
-    padding: 12px 35px;
-    border-radius: 40px;
+    padding: 0.75rem 2.1875rem;
+    border-radius: 2.5rem;
     outline: none;
     position: relative;
     background-color: #efefef;
-    font-size: 15px;
+    font-size: 1rem;
     background-image: url(https://www.freepnglogos.com/uploads/search-png/search-icon-transparent-images-vector-15.png);
     background-size: 17px;
     background-repeat: no-repeat;
@@ -98,7 +98,7 @@ a {
 
 .menu .finder input:focus {
     border: 4px solid #7bb5f0;
-    padding: 12px 35px;
+    padding: 12px 2.1875rem;
     background-image: none;
 }
 
@@ -111,10 +111,10 @@ a {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 25px;
+    width: 1.5625rem;
     border-radius: 50%;
     cursor: pointer;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .message {
@@ -122,10 +122,10 @@ a {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 25px;
+    width: 1.5625rem;
     border-radius: 50%;
     cursor: pointer;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .profile-pinterest {
@@ -136,10 +136,10 @@ a {
 }
 
 .profile-pinterest img {
-    width: 25px;
+    width: 1.5625rem;
     border-radius: 50%;
     cursor: pointer;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .profile-pinterest img:hover {
@@ -155,7 +155,7 @@ a {
 }
 
 #arrow svg {
-    padding: 10px;
+    padding: 0.625rem;
     cursor: pointer;
 }
 
@@ -170,9 +170,9 @@ a {
 }
 
 main {
-    columns: 5 200px;
+    columns: 5 12.5rem;
     column-gap: 0.5em;
-    padding: 100px;
+    padding: 6.25rem;
 }
 
 /* Botones */
@@ -196,14 +196,14 @@ main {
 
 .card-image .btn-enviar {
     position: absolute;
-    width: 29px;
-    height: 29px;
+    width: 1.8125rem;
+    height: 1.8125rem;
     background: none;
     border: none;
     border-radius: 70%;
     background-color: white;
-    bottom: 38px;
-    right: 60px;
+    bottom: 2.375rem;
+    right: 3.75rem;
     opacity: 0;
     cursor: pointer;
 }
@@ -214,10 +214,10 @@ main {
     border: none;
     border-radius: 70%;
     background-color: white;
-    width: 30px;
-    height: 30px;
-    bottom: 38px;
-    right: 15px;
+    width: 1.875rem;
+    height: 1.875rem;
+    bottom: 2.375rem;
+    right: 0.9375rem;
     opacity: 0;
     cursor: pointer;
 }
@@ -238,4 +238,48 @@ main {
 
 .card-image:hover .btn-enviar {
     opacity: 1;
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
+    .menu .finder input {
+        width: 700px;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 14px;
+    }
+    .menu .finder input {
+        width: 520px;
+    }  
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .menu .finder input {
+        width: 290px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+    .menu .finder input {
+        width: 100px;
+        background-image: none;
+    }
+    main {
+            columns: 3 90px;
+            column-gap: 0.5em;
+            padding: 90px;
+        }
 }
